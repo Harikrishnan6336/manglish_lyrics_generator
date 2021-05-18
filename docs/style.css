@@ -1,0 +1,140 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* body {
+    background-image: url("background.jpg");
+    opacity: 0.3;
+} */
+
+.container .left {
+    margin-left: 30px;
+    justify-self: left;
+}
+
+.container .left .github-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: -110px;
+}
+
+.container .left .github-links img {
+    margin-bottom: 30px;
+}
+
+img:hover {
+    background-color: #ffffff;
+}
+
+img:active {
+    background-color: #ffffff;
+    box-shadow: 0 5px #ffffff;
+    transform: translateY(4px);
+}
+
+.container .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.middle .button1 {
+    display: flex;
+    padding: 8px 8px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ec1010;
+    margin-right: 150px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(179, 102, 102);
+}
+
+.middle .button2 {
+    display: flex;
+    padding: 3px 8px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    margin-top: -35px;
+    margin-left: 150px;
+    background-color: #ec1010;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(179, 102, 102);
+}
+
+.middle .button1:hover {
+    background-color: #ec1010;
+}
+
+.middle .button2:hover {
+    background-color: #ec1010;
+}
+
+.middle .button1:active {
+    background-color: #ec1010;
+    box-shadow: 0 5px rgb(153, 67, 67);
+    transform: translateY(4px);
+}
+
+.middle .button2:active {
+    background-color: #ec1010;
+    box-shadow: 0 5px rgb(153, 67, 67);
+    transform: translateY(4px);
+}
+
+.container .right {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.container .right .logo img {
+    position: absolute;
+    margin-top: 10px;
+    right: 40px;
+    padding: 2px;
+    max-width: 50%;
+    height: auto;
+}
+
+.scroller {
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+
+.scroller::-webkit-scrollbar-track {
+    border: 1px;
+    border-radius: 10px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    background: rgb(83, 171, 243);
+    border-radius: 10px;
+}
+
+.scroller::-webkit-scrollbar-thumb:hover {
+    background: #26a4df;
+}
+
+.scroller::-webkit-scrollbar {
+    width: 10px;
+}
